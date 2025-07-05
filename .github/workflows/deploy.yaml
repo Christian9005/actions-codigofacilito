@@ -9,10 +9,8 @@ jobs:
   deploy-CodigoFacilito:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
       - uses: actions/checkout@v4
       - run: echo "Hacemos pull del codigo"
       - run: echo "Correr migraciones"
       - run: echo "Generar binarios"
       - run: echo "Publicar version"
-      - run: echo "Publicar version en Master"
